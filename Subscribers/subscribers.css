@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "FFont";
+    src: url(../Fonts/PlayfairDisplay-Regular.ttf);
+}
+.head{
+    color: whitesmoke;
+    padding: 40px;
+    font-size: 30px;
+}
+.head>p>a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-image: url("https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg");
+    background-attachment: fixed;
+    font-family: "FFont";
+    color: white;
+}

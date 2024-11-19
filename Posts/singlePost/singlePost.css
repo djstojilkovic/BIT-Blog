@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "FFont";
+    src: url(../../Fonts/PlayfairDisplay-Regular.ttf);
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+body{
+    background-image: url("https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg");
+    background-attachment: fixed;
+    font-family: "FFont";
+    color: white;
+}
+.head{
+    color: whitesmoke;
+    padding: 40px;
+    font-size: 30px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.head>p>a{
+        text-decoration: none;
+        color: white;
+}
+.divInfoAll{
+    text-align: center;
+     border-radius: 10px;
+     padding: 10px;
+     margin: 150px;
+     font-size: 30px;
+     animation: 2s ease-out 0s 1 slideInFromLeft;
+
+ }
+ .divTitle{
+    padding-bottom: 50px;
+ }
+ .divInfoLeft{
+    padding: 10px;
+ }
+ .divInfoRight{
+    padding-top: 50px;
+ }
