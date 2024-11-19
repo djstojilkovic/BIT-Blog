@@ -2,7 +2,7 @@ const URL = "https://673c4f8796b8dcd5f3f963e6.mockapi.io/api/v1/post";
 const allPostsContainer = document.querySelector(".allPostsContainer");
 const divAll = document.querySelector(".divAll");
 
-document.addEventListener("load", getPosts());
+window.addEventListener("load", getPosts);
 
 function getPosts() {
   fetch(URL)
