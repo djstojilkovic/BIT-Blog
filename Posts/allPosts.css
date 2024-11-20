@@ -1,65 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 @font-face {
-    font-family: "FFont";
-    src: url(../Fonts/PlayfairDisplay-Regular.ttf);
+  font-family: "FFont";
+  src: url(../Fonts/PlayfairDisplay-Regular.ttf);
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(40%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  0% {
+    transform: translateX(100%);
   }
-body{
-    background-image: url("https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg");
-    background-attachment: fixed;
-    font-family: "FFont";
+  100% {
+    transform: translateX(0);
+  }
 }
-.head{
-    display: flex;
-    justify-content: space-between;
-    color: whitesmoke;
-    padding: 40px;
-    font-size: 30px;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+body {
+  background-image: url("https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg");
+  background-attachment: fixed;
+  font-family: "FFont";
 }
-.allPosts{
-    font-size: 50px;
+.head {
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+  padding: 40px;
+  font-size: 30px;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
-.head>p>a{
-    text-decoration: none;
-    color: white;
+.allPosts {
+  font-size: 50px;
 }
-.allPostsContainer{
-    color:whitesmoke;
-    padding: 10px;
-    margin: 20px;
-    border: 1px solid whitesmoke;
-    border-radius: 10px;
-    margin-top: 80px;
-    animation: 2s ease-out 0s 1 slideInFromLeft;
+.head > p > a {
+  text-decoration: none;
+  color: white;
 }
-.divAll{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid whitesmoke;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 10px;
+.allPostsContainer {
+  color: whitesmoke;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  margin-top: 80px;
+  animation: 2s ease-out 0s 1 slideInFromBottom;
 }
-.divAll:hover{
-    box-shadow: 8px 8px 8px rgb(230, 230, 230);
-    cursor: pointer;
+.divAll {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
 }
-.divRight{
-    text-align: right;
-    font-size: 20px;
+.divAll:hover {
+  box-shadow: 8px 8px 8px rgb(230, 230, 230);
+  cursor: pointer;
 }
-.divLeft{
-    font-size:20px;
+.divRight {
+  text-align: right;
+  font-size: 20px;
+}
+.divLeft {
+  font-size: 20px;
 }
